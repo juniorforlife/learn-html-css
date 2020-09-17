@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  border: 1px solid #c36cbb;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 8px 16px 8px 16px;
+  font-size: 1rem;
+  color: #c36cbb;
+}
+.btn-filled {
+  background-color: #c36cbb;
+  color: #fff;
+}
+
+/**** header ****/
+header {
+  height: 56px;
+  justify-content: space-between;
+  padding: 0 5% 0 5%;
+}
+#toggler {
+  display: none;
+  border: none;
+  background: transparent;
+}
+#toggler i {
+  font-size: 1.5rem;
+  color: #5f5f79;
+}
+.logo-container img {
+  margin-right: 8px;
+}
+nav {
+  flex: 1;
+}
+.nav-links {
+  justify-content: space-around;
+}
+.nav-links a {
+  color: #5f5f79;
+  font-size: 0.9rem;
+}
+
+/**** main ****/
+.landing-section {
+  padding: 5vw 5vw 0 5vw;
+  animation: drop 1.5s;
+}
+.intro {
+  flex: 1;
+  margin-right: 10%;
+}
+.intro h3 {
+  font-size: 2rem;
+  background: linear-gradient(to right, #333, grey);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro p {
+  margin-top: 8px;
+  color: #585772;
+}
+.product-img-wrapper {
+  flex: 1;
+}
+.product-img-wrapper img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0px 5px 3px #000);
+}
+.cta {
+  margin-top: 16px;
+}
+.cta button:first-child {
+  margin-right: 8px;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY((0));
+  }
+}
+
+@media screen and (max-width: 675px) {
+  #toggler {
+    display: block;
+  }
+  nav {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 56px;
+    left: 0;
+    padding: 5%;
+    background-color: #fff;
+  }
+  .nav-links {
+    display: block;
+  }
+  .landing-section {
+    flex-direction: column;
+  }
+  .cta {
+    display: flex;
+    justify-content: center;
+  }
+  .product-img-wrapper {
+    width: 70%;
+  }
+}

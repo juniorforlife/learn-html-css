@@ -12,9 +12,26 @@ li {
 a {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h1 {
+  font-size: 4rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
 nav a,
 nav i {
   color: #d3d3d3;
+}
+.align-center {
+  text-align: center;
 }
 
 .nav-links-lg,
@@ -52,6 +69,19 @@ nav i {
   background-color: transparent;
   border: none;
   font-size: 16px;
+}
+
+.section {
+  padding: 5%;
+}
+.section img {
+  width: 80vw;
+  height: auto;
+}
+.section p {
+  font-size: 1.2rem;
+  color: #6e6e73;
+  text-align: left;
 }
 
 @media screen and (max-width: 665px) {

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap");
+/*Global styles*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: "Source Sans Pro", sans-serif;
+  --secondary-font: "Herr Von Muellerhoff", cursive;
+  --body-font: "Cabin", sans-serif;
+  --main-font-color-dark: #252525;
+  --secondary-font-color: #c59d5f;
+  --body-font-color: #515151;
+}
+
+.img-container {
+  text-align: center;
+  background-color: #fedec5;
+  transition: 1s;
+}
+.phone-img {
+  width: auto;
+  height: auto;
+  max-height: 50vh;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  margin: 16px;
+  border-radius: 25px;
+  border: none;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  margin: auto;
+}
+
+@keyframes transitColor {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

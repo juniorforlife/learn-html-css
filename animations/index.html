@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      const colors = [
+        { code: "#fedec5", name: "Gold" },
+        { code: "#6d7a71", name: "Green" },
+        { code: "#eeeee6", name: "Silver" },
+        { code: "#545351", name: "Space gray" },
+      ];
+      const iphoneImages = [
+        "images/iphone_11_pro_max_gold.png",
+        "images/iphone_11_pro_max_midnight_green.png",
+        "images/iphone_11_pro_max_silver.png",
+        "images/iphone_11_pro_max_space_gray.png",
+      ];
+      var selectedIndex = 0;
+      function pickColor(selectedIndex) {
+        document.querySelector(".phone-img").src = iphoneImages[selectedIndex];
+        document.querySelector(".img-container").style.backgroundColor =
+          colors[selectedIndex].code;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-container">
+        <img
+          src="./images/iphone_11_pro_max_gold.png"
+          alt=""
+          class="phone-img"
+        />
+      </div>
+      <div class="row">
+        <button
+          class="circle"
+          onclick="pickColor(0)"
+          style="background-color: #fedec5"
+        ></button>
+        <button
+          class="circle"
+          onclick="pickColor(1)"
+          style="background-color: #6d7a71"
+        ></button>
+        <button
+          class="circle"
+          onclick="pickColor(2)"
+          style="background-color: #eeeee6"
+        ></button>
+        <button
+          class="circle"
+          onclick="pickColor(3)"
+          style="background-color: #545351"
+        ></button>
+      </div>
+    </div>
+  </body>
+</html>
